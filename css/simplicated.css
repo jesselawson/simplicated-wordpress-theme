@@ -1,0 +1,520 @@
+/*
+
+	Simplicated-specific CSS customizations
+	These will override any customizations in the base style.css,
+	and can be overridden by using custom.css.
+	
+*/
+
+span.wpcf7-list-item {
+	margin-bottom: 8px;
+	display:block;
+}
+
+#page {
+	max-width: 828px;
+	/*min-width: 320px; */
+	margin: 1.5em auto; 
+	padding: 0 1.5em;
+}
+
+p.wp-caption-text {
+	font-size: 14px; 
+	color: #aaa;
+}
+
+ul, ol {
+	font-size: 130%; /* Set list font size to our minimum font size */
+}
+
+li {
+	margin-bottom: 1.5em;
+}
+
+.social-media-bar {
+	width: 100%; margin: 5px;
+}
+
+/* A way to display circular images, like our header */
+
+.circular-300 {
+	width: 300px;
+	height: 300px;
+	margin: 0 auto; /* this will center the image */
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+
+.circular-150 {
+	width: 150px;
+	height: 150px;
+	margin: 0 auto; /* this will center the image */
+	border-radius: 75px;
+	-webkit-border-radius: 75px;
+	-moz-border-radius: 75px;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+
+.circular-100 {
+	width: 100px;
+	height: 100px;
+	margin: 0 auto; /* this will center the image */
+	border-radius: 50px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	box-shadow: 0 0 4px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 4px rgba(0, 0, 0, .8);
+}
+
+body {
+	background-image:url('images/lawsonryfancypaper.jpg');
+}
+
+body,
+button,
+input,
+select,
+textarea,
+p {
+	color: #2f2f2f;
+	font-family: Georgia, serif;
+	font-size: 130%;
+	line-height: 1.4em;
+	margin: 0 0 1.4em;
+}
+
+.widget {
+	color: #2f2f2f;
+	font-family: Georgia, serif;
+	font-size: 100%;
+	line-height: 1.4em;
+	margin: 0 0 1.4em;
+}
+
+/* Set all images to be max-width of their containing box */
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Fix max-width image for IE (Why are people still using IE?) */
+@media \0screen {
+  img { 
+  	width: auto; /* for ie 8 */
+  }
+}
+
+
+
+	
+h1 {
+	color: #262626;
+	font-family: "Enriqueta", serif;
+	font-size: 258%;
+	line-height: 48px;
+	margin: 0 0 5px;
+}
+
+h1.site-title a {
+	color: #fff;
+	font-weight: bold;
+	background-color: #666666;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+   }
+h1.white a {
+	color: #fff; 
+	font-weight: bold;
+}
+
+.header-container {
+	width: 300px; height: 300px; margin: 0 auto;
+}
+
+/* header fix for small smartphones and iphone*/
+@media only screen and (max-width: 320px),
+only screen and (max-width: 480px),
+only screen and (device-aspect-ratio: 2/3),
+only screen and (device-aspect-ratio: 40/71) {
+	.header-container {
+		width: 100%; height: 100%; margin: 0 auto; 
+		padding: 0em;
+	}
+	.header-logo-text {
+		margin: 0px 0px !important;
+		padding: 1em; 
+		top: 0px !important;
+		
+		-moz-border-radius: 50px;
+		-webkit-border-radius: 50px;
+		-khtml-border-radius: 50px;
+		border-radius: 50px;
+		text-align: center;
+    
+	}
+	
+	.circular-300 {
+		width: auto;
+		height: auto;
+		margin: 0 auto; /* this will center the image */
+		border-radius: 75px;
+		-webkit-border-radius: 75px;
+		-moz-border-radius: 75px;
+		box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+		-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+		-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+		}
+
+	}
+
+.header-logo-text {
+	float: left; 
+	margin: auto -10em; 
+	padding: 0 25px;  
+	color: #FFF; 
+	z-index: 10; 
+	display:inline-block; 
+	position: relative; 
+	top: 66%;
+	-moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -khtml-border-radius: 50px;
+    border-radius: 50px;
+}
+
+h2 {
+	color: #262626;
+	font-family: "Enriqueta", serif;
+	font-size: 188%;
+	font-weight: normal;
+	line-height: 1.31em;
+	margin: 0 0 1.3em;
+	padding: 12px 0 0;
+}
+
+h3 {
+	color: #c73036;
+	font-family: "Enriqueta", serif;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 24px;
+	margin: 0 0 24px;
+	padding: 12px 0 0;
+	text-transform: uppercase;
+}
+
+.entry-meta {
+	color: #aaaaaa;
+	font-family: Georgia, serif;
+	font-size: 100%;
+	font-style: italic;
+	line-height: 1.0em;
+	padding: 0 0 1.0em 0;
+}
+
+.entry-meta a {
+	
+	font-family: "Enriqueta", serif;
+	font-style: normal;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+/* Navigation styles (centered, responsive, like a boss) */
+
+.site-info li {
+margin: 0 5px 5px 0;
+padding: 0;
+list-style: none;
+display: inline-block;
+}
+
+
+/* nav */
+.nav {
+	margin: 20px 0;
+	font-family: "Enriqueta", serif;
+	font-size: 130%;
+	font-weight: bold; 
+}
+.nav ul {
+	margin: 0;
+	padding: 0;
+}
+.nav li {
+	margin: 0 5px 10px 0;
+	padding: 0;
+	list-style: none;
+	display: inline-block;
+	*display:inline; /* ie7 */
+}
+.nav a, .nav a:visited {
+	padding: 3px 12px;
+	/*color: #214f6a;*/
+	text-decoration: none;
+	line-height: 100%;
+}
+.nav a:hover {
+	/*color: #277a98;*/
+}
+.nav .current-menu-item a {
+	color: #2f2f2f;
+	border-radius: 5px;
+}
+
+/* right nav */
+.nav.right ul {
+	text-align: right;
+}
+
+/* center nav */
+.nav.center ul {
+	text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+	.nav {
+		position: relative;
+		min-height: 40px;
+		font-size: 100%;
+	}	
+	.nav ul {
+		width: 180px;
+		padding: 5px 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		border: solid 1px #aaa;
+		background: #fff url(images/icon-menu.png) no-repeat 10px 11px;
+		border-radius: 5px;
+		box-shadow: 0 1px 2px rgba(0,0,0,.3);
+	}
+	.nav li {
+		display: none; /* hide all <li> items */
+		margin: 0;
+	}
+	.nav .current-menu-item {
+		display: block; /* show only current <li> item */
+	}
+	.nav li a {
+		display: block;
+		padding: 5px 5px 5px 32px;
+		text-align: left;
+	}
+	.nav .current-menu-item a {
+		background: none;
+		color: #666;
+	}
+
+	/* on nav hover */
+	.nav ul:hover {
+		background-image: none;
+	}
+	.nav ul:hover li {
+		display: block;
+		margin: 0 0 5px;
+	}
+	.nav ul:hover .current-menu-item {
+		background: url(images/icon-check.png) no-repeat 10px 7px;
+	}
+
+	/* right nav */
+	.nav.right ul {
+		left: auto;
+		right: 0;
+	}
+
+	/* center nav */
+	.nav.center ul {
+		left: 50%;
+		margin-left: -90px;
+	}
+	
+}
+
+/* ABOUT THE AUTHOR BOX */
+
+	.aboutbox-container {
+	  width: 100%; 
+	}
+	 
+	.aboutbox-left {
+	  float: left; 
+	  margin: 5px; 
+	  width: 50%; /*Set this to the width of your author images*/
+	  min-width: 10%;
+	}
+	 
+	.aboutbox-right {
+	  overflow: hidden;
+	  padding-left: 10px; 
+	}
+	 
+	h3.aboutbox-title {
+	  font-family: Georgia; 
+	  font-weight: bold; 
+	  font-size: 22px;
+	  margin-bottom: 10px;
+	  color: #aa0000;
+	}
+	 
+	p.aboutbox-bio {
+	  color: #aaaaaa;
+	  font-family: Georgia, serif;
+	  font-size: 14px; 
+	} 
+	
+	p.aboutbox-bio a {
+		font-family: "Enriqueta", serif;
+		font-style: normal;
+		font-weight: bold;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+	
+	.big-aboutbox-left {
+	  float: left; 
+	  width: 150px;
+	}
+	 
+	.big-aboutbox-right {
+	  overflow: hidden;
+	  padding-left: 10px; 
+	}
+	
+	.big-aboutbox-right p {
+		color: #aaaaaa;
+		font-family: Georgia, serif;
+		font-size: 17px;
+		margin-bottom: -10px;
+		padding: 0;
+	}
+	 
+	h3.big-aboutbox-title {
+		color: #262626;
+		font-family: "Enriqueta", serif;
+		font-size: 188%;
+		font-weight: normal;
+		line-height: 1.31em;
+		margin: 0;
+		padding: 0 0 0 12px;
+	}
+	 
+	p.big-aboutbox-bio {
+	  color: #2f2f2f;
+	  font-family: Georgia, serif;
+	  font-size: 17px;
+	  margin-bottom: 10px;
+	} 
+	
+
+/* FEATURED IMAGES FOR SINGLE POSTS */
+
+	img.wp-post-image {
+		-moz-box-shadow: 0px 0px 4px #000;
+		-webkit-box-shadow: 0px 0px 4px #000;
+		box-shadow: 0px 0px 4px #000;
+		/* For IE 8 */
+		-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
+		/* For IE 5.5 - 7 */
+		filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
+	}
+
+	/* Make sure all images have maxed out width for their container divs */
+	.featured-image-big-before-title img, .featured-image-big-before-meta img, .featured-image-big-before-content img, .featured-image-small-float-left img, .featured-image-small-float-right img {
+		width: 100%; height: auto; 
+	} 
+	
+	
+	.featured-image-full-width {
+		width: 100%; 
+		margin: 1em 0;
+	} 
+	
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+	.featured-image-half-width-left, .featured-image-half-width-right, .featured-image-full-width {
+		width: 320px;
+		height: auto;
+		float: none; 
+		margin: 1em 0;
+		display:block;
+	}
+
+	
+}
+
+@media screen and (max-width : 600px) {
+	
+	/* On mobile devices, featured images are always going to be full-width */
+	.featured-image-half-width-left img, .featured-image-half-width-right img {
+		width: 100%; 
+		height: auto;
+		
+	}
+		/* On mobile devices, featured images are always going to be full-width */
+	.featured-image-half-width-left, .featured-image-half-width-right {
+		width: 100%; 
+		margin: 1em 0;
+		display:inline;
+	}
+
+}
+		
+	.featured-image-half-width-left {
+		width: 50%; 
+		margin: 0 1em 1em 0;
+		float:left;
+	}
+	
+	.featured-image-half-width-right {
+		width: 50%; 
+		margin: 0 0 1em 1em;
+		float: right;
+	}
+	
+	
+
+/* Search form */
+.field {
+	width: 50%;
+	margin: 0 auto; 
+}
+
+/* Sidebar widgets */
+
+.sidebar-left {
+	width: 40%; 
+	float: left;
+	display: inline-block;
+	margin: 0 auto;
+}
+
+.sidebar-right {
+	overflow: hidden;
+	float: left;
+	width: 40%;
+	display: inline-block;
+	margin: 0 auto;
+}
+
+
+blockquote {
+	font-size: 90%; 
+	font-style: italic; 
+	border-left: 2px solid #eee; 
+	padding-left: 1.0em;
+	
+}
